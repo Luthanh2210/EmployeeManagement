@@ -64,11 +64,11 @@ EmployeeController implements Initializable {
                 new Employee("1", "dat", "quoc", "dat@", "12*"),
                 new Employee("2", "dat", "vinh", "dat@", "13*")
         );
-        empIdColumn.setCellValueFactory(new PropertyValueFactory<>("empIdColumn"));
-        empNameColumn.setCellValueFactory(new PropertyValueFactory<>("EmployeeName"));
-        empLastNameColumn.setCellValueFactory(new PropertyValueFactory<>("EmployeeLastName"));
-        empEmailColumn.setCellValueFactory(new PropertyValueFactory<>("EmployeeEmail"));
-        empPhoneNumberColumn.setCellValueFactory(new PropertyValueFactory<>("EmployeePhoneNumber"));
+        empIdColumn.setCellValueFactory(new PropertyValueFactory<>("employee_id"));
+        empNameColumn.setCellValueFactory(new PropertyValueFactory<>("first_name"));
+        empLastNameColumn.setCellValueFactory(new PropertyValueFactory<>("last_name"));
+        empEmailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
+        empPhoneNumberColumn.setCellValueFactory(new PropertyValueFactory<>("phone_number"));
 //        empHireDateColumn.setCellValueFactory(new PropertyValue   Factory<>("EmployeeHireDate"));
         empNameColumn.setSortType(TableColumn.SortType.DESCENDING);
         empLastNameColumn.setSortable(false);
