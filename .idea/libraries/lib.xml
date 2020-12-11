@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://C:/xampp/tomcat/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/xampp/tomcat/lib/mysql-connector-5.1.18.jar!/" />
+      <root url="jar://C:/xampp/tomcat/lib/mysql-connector-5.1.18.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://C:/xampp/tomcat/lib" recursive="false" />
+  </library>
+</component>
