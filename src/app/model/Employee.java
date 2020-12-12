@@ -4,14 +4,14 @@ import javafx.beans.property.*;
 
 public class Employee {
     //Declare Employees Table Columns
-    private StringProperty employee_id;
-    private  StringProperty first_name;
-    private  StringProperty last_name;
-    private  StringProperty email;
-    private  StringProperty phone_number;
-//    private SimpleObjectProperty<String> hire_date;
-//    private StringProperty job_id;
-//    private IntegerProperty salary;
+    final private StringProperty employee_id;
+    final private  StringProperty first_name;
+    final private  StringProperty last_name;
+    final private  StringProperty email;
+    final private  StringProperty phone_number;
+//    final private SimpleObjectProperty<String> hire_date;
+//    final private StringProperty job_id;
+//    final private IntegerProperty salary;
 
     public Employee() {
         this("","","","","");
@@ -32,15 +32,24 @@ public class Employee {
     }
 
     public void setEmployee_id(String employee_id) {
-        this.employee_id= new SimpleStringProperty(employee_id);
+        this.employee_id.set(employee_id);
     }
+
+    public StringProperty employee_idProperty() {
+        return employee_id ;
+    }
+
 
     public String getFirst_name() {
         return first_name.get();
     }
 
     public void setFirst_name(String first_name) {
-        this.first_name= new SimpleStringProperty(first_name);
+        this.first_name.set(first_name);
+    }
+
+    public StringProperty firstNameProperty() {
+        return first_name;
     }
 
     public String getLast_name() {
@@ -48,7 +57,11 @@ public class Employee {
     }
 
     public void setLast_name(String last_name) {
-        this.last_name = new SimpleStringProperty(last_name);
+        this.last_name.set(last_name);
+    }
+
+    public StringProperty lastNameProperty(){
+        return last_name;
     }
 
     public String getEmail() {
@@ -57,7 +70,11 @@ public class Employee {
 
 
     public void setEmail(String email) {
-        this.email = new SimpleStringProperty(email);
+        this.email.set(email);
+    }
+
+    public StringProperty emailProperty(){
+        return email;
     }
 
     public String getPhone_number() {
@@ -66,7 +83,11 @@ public class Employee {
 
 
     public void setPhone_number(String phone_number) {
-        this.phone_number = new SimpleStringProperty(phone_number);
+        this.phone_number.set(phone_number);
+    }
+
+    public StringProperty PhoneNumberProperty(){
+        return phone_number;
     }
 
 //    public String getHire_date() {
