@@ -77,9 +77,6 @@ EmployeeController implements Initializable {
                 (observable,oldValue, newValue) -> showEmployeeDetail(newValue));
 
 
-
-
-
     }
 
     private void showEmployeeDetail(Employee employee){
@@ -101,10 +98,15 @@ EmployeeController implements Initializable {
     }
 
 
-    public void insert(ActionEvent actionEvent) {
-        Employee employee = new Employee((empIdText.getText()), nameText.getText(), surnameText.getText(), emailText.getText(), empPText.getText());
-        employeeTable.getItems().add(employee);
+    @FXML
+    private void handleNewEmployee() {
+        Employee tempEmployee = new Employee();
+        boolean okClicked = Main.ShowEmployeeEditDialog(tempEmployee);
+        if (okClicked) {
+            dataList.add(tempEmployee);
+        }
     }
+
     @FXML
     public void delete(ActionEvent actionEvent) {
         int selectionIndex = employeeTable.getSelectionModel().getSelectedIndex();

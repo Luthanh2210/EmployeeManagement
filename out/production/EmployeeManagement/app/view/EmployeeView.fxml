@@ -16,7 +16,7 @@
         <Label layoutX="194.0" layoutY="21.0" text="Employee ID" />
 <!--        <Button fx:id="searchEmpBtn" layoutX="194.0" layoutY="70.0" mnemonicParsing="false" onAction="#searchEmployee" prefHeight="31.0" prefWidth="67.0" text="Search" />-->
         <Button layoutX="62.0" layoutY="291.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="70.0" text="Delete" />
-        <Button layoutX="71.0" layoutY="183.0" mnemonicParsing="false" onAction="#insert" text="Add " />
+        <Button layoutX="71.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleNewEmployee" text="Add " />
         <Label layoutX="339.0" layoutY="21.0" text="Date" />
         <VBox layoutX="97.0" layoutY="24.0" spacing="4.0">
             <children>
